@@ -10,9 +10,9 @@ lines = [line.strip() for line in lines if line.strip()]
 
 count = 0
 x = 0
-for line in lines[1:]:
-    x+=3
+for line in lines:
     char = line[x % len(line)]
+    x+=3
     if char=='#':
         count+=1
 
